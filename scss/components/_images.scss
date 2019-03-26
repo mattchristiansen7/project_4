@@ -1,0 +1,20 @@
+.img--frame {
+  padding:15px;
+  border: 1px solid lightgrey;
+  width: 320px;
+  @media (min-width: $break-m) {
+  @include media-center;
+   }
+  }
+
+.img--avatar {
+  margin-top: 5px;
+
+}
+
+.img--logo {
+
+  @media (min-width: $break-m) {
+  @include media-center;
+  }
+}

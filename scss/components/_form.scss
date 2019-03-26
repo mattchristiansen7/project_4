@@ -1,0 +1,39 @@
+.form {
+  @include flexbox;
+  margin: auto;
+  @media (min-width: $break-m ) {
+    flex-direction: column;
+
+  }
+}
+
+.form__label--hidden {
+  display:none;
+}
+
+.form__input {
+  width:100%;
+  border: 0;
+	outline: 0;
+	background: transparent;
+	border-bottom: 8px solid $primary-color;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+ box-shadow:none;
+}
+.form .btn--default {
+  margin-top: 10px;
+  background-color: #7ee6fd;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border: none;
+  border-radius: 3px;
+  border: 3px;
+  text-transform: uppercase;
+  width:300px;
+  @media  (min-width: $break-m) {
+    width:350px;
+  }
+}

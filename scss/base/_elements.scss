@@ -1,0 +1,28 @@
+//elements partial
+
+a {
+text-decoration: none;
+color: $text-color;
+width:300px;
+background-color: white;
+border-radius: 8px;
+font-size: 1em;
+
+@media (min-width: $break-m) {
+width:inherit;
+padding:inherit 10px inherit 10px;
+}
+  }
+  a:hover {
+    background-color: $primary-color;
+  }
+
+
+  p {
+    font-family: $font-stack-primary;
+    a {
+      text-decoration: none;
+      color: $main-blue;
+
+    }
+  }

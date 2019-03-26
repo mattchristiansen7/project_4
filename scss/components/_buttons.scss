@@ -1,0 +1,43 @@
+
+.grid__col--12 .btn--default {
+  @include button-style;
+  background-color: $main-blue;
+  margin-bottom: 10px;
+  margin-top: 0;
+
+}
+
+.btn--success.theme__colors {
+  @include button-style;
+ background-color: #63cc82;
+margin-bottom: 10px;
+
+
+
+}
+
+.btn--error.theme__colors {
+  @include button-style;
+  background-color: #e4757a;
+margin-bottom: 10px;
+
+
+}
+
+.btn--warning.theme__colors {
+  @include button-style;
+  background-color: #fd7856;
+margin-bottom: 10px;
+
+
+}
+
+.btn--info.theme__colors {
+  @include button-style;
+  background-color: #927bc1;
+  margin-bottom: 10px;
+
+
+
+
+}
