@@ -2,7 +2,7 @@
 //flexbox mixin
 @mixin flexbox {
  display:flex;
- justify-content: center;
+ justify-content: space-around;
  align-self: center;
  align-items: center;
  flex-direction: column;
@@ -15,10 +15,11 @@
 //button mixen
 @mixin button-style {
   padding:7px 20px 7px 20px;
-  width:300px;
+  width:100%;
   border: none;
   border-radius: 3px;
   border: 3px;
+  color: white;
   text-transform: uppercase;
  @content ;
  @media (min-width: $break-m) {
@@ -26,7 +27,15 @@
  }
 }
 
+
 //media query mixin
+@mixin center {
+display:flex;
+flex-direction: row;
+justify-content: center;
+
+}
+
 @mixin media-center {
 display: flex;
 align-items: center;
@@ -37,12 +46,11 @@ margin-right: auto;
 //theme style mixen
 @mixin theme-styles{
  padding: 7px 0px;
+ color: grey;
  border-radius: 3px;
- width:300px;
+ width:100%;
+@media (min-width: $break-m){
+  text-align: center;
 
 }
-@mixin gridcol {
-  width:90%;
-  @content;
-
 }

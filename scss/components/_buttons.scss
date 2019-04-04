@@ -1,9 +1,20 @@
 
+.grid__col--12 {
+ @media (min-width: $break-m){
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+
+ }
+
+}
+
 .grid__col--12 .btn--default {
   @include button-style;
   background-color: $main-blue;
   margin-bottom: 10px;
   margin-top: 0;
+
 
 }
 
@@ -12,9 +23,8 @@
  background-color: #63cc82;
 margin-bottom: 10px;
 
-
-
 }
+
 
 .btn--error.theme__colors {
   @include button-style;
@@ -36,8 +46,5 @@ margin-bottom: 10px;
   @include button-style;
   background-color: #927bc1;
   margin-bottom: 10px;
-
-
-
 
 }
