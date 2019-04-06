@@ -34,7 +34,7 @@
   text-transform: uppercase;
   width:300px;
   color: white;
-  @media  (min-width: $break-m) {
+  @include mq(medium) {
     width:350px;
   }
 }

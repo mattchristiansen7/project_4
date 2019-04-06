@@ -2,7 +2,7 @@
   padding:15px;
   border: 1px solid lightgrey;
   width: 320px;
-  @media (min-width: $break-m) {
+  @include mq(medium) {
   @include media-center;
    }
   }
@@ -14,7 +14,7 @@
 
 .img--logo {
 
-  @media (min-width: $break-m) {
+  @include mq(medium) {
   @include media-center;
   }
 }

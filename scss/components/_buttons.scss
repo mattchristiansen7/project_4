@@ -1,6 +1,6 @@
 
 .grid__col--12 {
- @media (min-width: $break-m){
+ @include mq(medium){
    display: flex;
    flex-direction: row;
    justify-content: space-around;

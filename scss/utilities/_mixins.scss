@@ -29,6 +29,19 @@
 
 
 //media query mixin
+@mixin mq($break) {
+  @if $break == "small" {
+    @media (min-width: $break-s) and (max-width: $break-m){
+      @content;
+    }
+  }
+  @else if $break =="medium" {
+    @media (min-width: $break-m +1) {
+      @content;
+    }
+  }
+}
+
 @mixin center {
 display:flex;
 flex-direction: row;
